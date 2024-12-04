@@ -1,0 +1,900 @@
+{
+  "id": "1f22fa2c-09cb-4ef6-ab6f-345b0a568aac",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.jobsfile": {
+      "name": "jobsfile",
+      "schema": "",
+      "columns": {
+        "jobno": {
+          "name": "jobno",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "acongpreasoncode": {
+          "name": "acongpreasoncode",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "aconno": {
+          "name": "aconno",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "actualweight": {
+          "name": "actualweight",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "assigneduser": {
+          "name": "assigneduser",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "authorizedphone": {
+          "name": "authorizedphone",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "blindedflag": {
+          "name": "blindedflag",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "bolno": {
+          "name": "bolno",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "commodity": {
+          "name": "commodity",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "cono": {
+          "name": "cono",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "conochange": {
+          "name": "conochange",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "consignee": {
+          "name": "consignee",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "consigneecity": {
+          "name": "consigneecity",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "consigneecontact": {
+          "name": "consigneecontact",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "consigneecountrycode": {
+          "name": "consigneecountrycode",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "consigneedrivetime": {
+          "name": "consigneedrivetime",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "consigneemiles": {
+          "name": "consigneemiles",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "consigneename": {
+          "name": "consigneename",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "consigneestate": {
+          "name": "consigneestate",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "consigneetelno": {
+          "name": "consigneetelno",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "consigneezip": {
+          "name": "consigneezip",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "controlstation": {
+          "name": "controlstation",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "custauth": {
+          "name": "custauth",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "custauthphone": {
+          "name": "custauthphone",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "customerno": {
+          "name": "customerno",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "customsclearancecountry": {
+          "name": "customsclearancecountry",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "customscleared": {
+          "name": "customscleared",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "customsstatus": {
+          "name": "customsstatus",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "deadline": {
+          "name": "deadline",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "declaredvalue": {
+          "name": "declaredvalue",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "deliverycomment": {
+          "name": "deliverycomment",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "deliverydate": {
+          "name": "deliverydate",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "deliveryutc": {
+          "name": "deliveryutc",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "destination": {
+          "name": "destination",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "dimweight": {
+          "name": "dimweight",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "dimweights": {
+          "name": "dimweights",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "discount": {
+          "name": "discount",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "displaydimvalues": {
+          "name": "displaydimvalues",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "displaydimweight": {
+          "name": "displaydimweight",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "displayweight": {
+          "name": "displayweight",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "displayweightoriginal": {
+          "name": "displayweightoriginal",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "earlydeliverydescription": {
+          "name": "earlydeliverydescription",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "earlydeliverysubtype": {
+          "name": "earlydeliverysubtype",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "earlydeliverytype": {
+          "name": "earlydeliverytype",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "earlypickupdescription": {
+          "name": "earlypickupdescription",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "earlypickupsubtype": {
+          "name": "earlypickupsubtype",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "earlypickuptype": {
+          "name": "earlypickuptype",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "entrydate": {
+          "name": "entrydate",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "fiscalperiod": {
+          "name": "fiscalperiod",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "googlemilesinfo": {
+          "name": "googlemilesinfo",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "incoterms": {
+          "name": "incoterms",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "insurancetype": {
+          "name": "insurancetype",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "insurancevalue": {
+          "name": "insurancevalue",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "invoiceapproved": {
+          "name": "invoiceapproved",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "invoicecurrency": {
+          "name": "invoicecurrency",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "invoicedate": {
+          "name": "invoicedate",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "invoiceexception": {
+          "name": "invoiceexception",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "invoiceno": {
+          "name": "invoiceno",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "invoicereference": {
+          "name": "invoicereference",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "latepickupcode": {
+          "name": "latepickupcode",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "latepickupid": {
+          "name": "latepickupid",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "latepickupinfo": {
+          "name": "latepickupinfo",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "localmiles": {
+          "name": "localmiles",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "metric": {
+          "name": "metric",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "metricweight": {
+          "name": "metricweight",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ordertype": {
+          "name": "ordertype",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "origin": {
+          "name": "origin",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "outfordelivery": {
+          "name": "outfordelivery",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "paytype": {
+          "name": "paytype",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pickupdate": {
+          "name": "pickupdate",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pickupexpected": {
+          "name": "pickupexpected",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pickuputc": {
+          "name": "pickuputc",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pieces": {
+          "name": "pieces",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "podenteredby": {
+          "name": "podenteredby",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "podentrylocaltime": {
+          "name": "podentrylocaltime",
+          "type": "time",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "podsignature": {
+          "name": "podsignature",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "prjobrealcustomer": {
+          "name": "prjobrealcustomer",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "qoluser": {
+          "name": "qoluser",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "quoteamount": {
+          "name": "quoteamount",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "readydate": {
+          "name": "readydate",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "readydateutc": {
+          "name": "readydateutc",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rebate": {
+          "name": "rebate",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rebatediscount": {
+          "name": "rebatediscount",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "returnticket": {
+          "name": "returnticket",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "reviseddeadline": {
+          "name": "reviseddeadline",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "servicetype": {
+          "name": "servicetype",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "shipper": {
+          "name": "shipper",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "shippercity": {
+          "name": "shippercity",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "shippercontact": {
+          "name": "shippercontact",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "shippercountrycode": {
+          "name": "shippercountrycode",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "shipperdrivetime": {
+          "name": "shipperdrivetime",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "shippermiles": {
+          "name": "shippermiles",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "shippername": {
+          "name": "shippername",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "shipperstate": {
+          "name": "shipperstate",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "shippertelno": {
+          "name": "shippertelno",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "shipperzip": {
+          "name": "shipperzip",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "sls": {
+          "name": "sls",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status": {
+          "name": "status",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "terms": {
+          "name": "terms",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "valuecurrency": {
+          "name": "valuecurrency",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "weight": {
+          "name": "weight",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.likes": {
+      "name": "likes",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "post_id": {
+          "name": "post_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "likes_post_id_posts_id_fk": {
+          "name": "likes_post_id_posts_id_fk",
+          "tableFrom": "likes",
+          "tableTo": "posts",
+          "columnsFrom": [
+            "post_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "likes_user_id_user_id_fk": {
+          "name": "likes_user_id_user_id_fk",
+          "tableFrom": "likes",
+          "tableTo": "user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.posts": {
+      "name": "posts",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "caption": {
+          "name": "caption",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "image_url": {
+          "name": "image_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "posts_user_id_user_id_fk": {
+          "name": "posts_user_id_user_id_fk",
+          "tableFrom": "posts",
+          "tableTo": "user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.session": {
+      "name": "session",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "expires_at": {
+          "name": "expires_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "session_user_id_user_id_fk": {
+          "name": "session_user_id_user_id_fk",
+          "tableFrom": "session",
+          "tableTo": "user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.user_profile": {
+      "name": "user_profile",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "manager": {
+          "name": "manager",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "fin_cono": {
+          "name": "fin_cono",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "role": {
+          "name": "role",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "user_profile_user_id_user_id_fk": {
+          "name": "user_profile_user_id_user_id_fk",
+          "tableFrom": "user_profile",
+          "tableTo": "user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.user": {
+      "name": "user",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "first_name": {
+          "name": "first_name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "last_name": {
+          "name": "last_name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "email": {
+          "name": "email",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "password_hash": {
+          "name": "password_hash",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "user_email_unique": {
+          "name": "user_email_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "email"
+          ]
+        }
+      }
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
